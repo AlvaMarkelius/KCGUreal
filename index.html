@@ -26,32 +26,38 @@
       line-height: 1.6;
     }
 
+    /* Header */
     header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 10%;
       background-color: var(--purple);
       color: var(--white);
-      padding: 2rem 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
     }
 
     header img {
       max-height: 60px;
-      margin-bottom: 1rem;
+      margin-right: 15px;
     }
 
     header h1 {
-      margin-bottom: 0.5rem;
       font-size: 2rem;
+      margin-bottom: 0;
     }
 
+    /* Navigation */
     nav {
-      background: var(--white);
+      background-color: var(--white);
       border-bottom: 2px solid var(--purple);
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      justify-content: flex-end;
+      flex-grow: 1;
     }
 
     nav a {
@@ -66,6 +72,7 @@
       background: var(--light-grey);
     }
 
+    /* Sections */
     section {
       padding: 4rem 2rem;
       max-width: 800px;
@@ -77,31 +84,35 @@
       margin-bottom: 1rem;
     }
 
+    /* Footer */
     footer {
       background-color: var(--purple);
       color: var(--white);
       text-align: center;
       padding: 2rem 1rem;
     }
+
   </style>
 </head>
 <body>
 
+  <!-- Header with logo and title -->
   <header>
-    <!-- Add your logo below if you have one -->
-    <!-- <img src="logo.png" alt="KCGU Logo"> -->
-    <h1>King's College Graduate Union (KCGU)</h1>
-    <p>Representing and supporting King’s postgraduate community</p>
+    <div class="logo-title">
+      <!-- Add your logo below if you have one -->
+      <!-- <img src="logo.png" alt="KCGU Logo"> -->
+      <h1>King's College Graduate Union (KCGU)</h1>
+    </div>
+    <nav>
+      <a href="#about">About Us</a>
+      <a href="#bar-suite">King’s Grad Bar and Grad Suite</a>
+      <a href="#freshers">Guide for Fresher’s</a>
+      <a href="#committee">Executive Committee Members</a>
+      <a href="#links">Useful Links</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About Us</a>
-    <a href="#bar-suite">King’s Grad Bar and Grad Suite</a>
-    <a href="#freshers">Guide for Fresher’s</a>
-    <a href="#committee">Executive Committee Members</a>
-    <a href="#links">Useful Links</a>
-  </nav>
-
+  <!-- Sections -->
   <section id="about">
     <h2>About Us</h2>
     <p>[Add content about the KCGU mission, history, goals, etc.]</p>
@@ -130,6 +141,7 @@
     </ul>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 King's College Graduate Union (KCGU). All rights reserved.</p>
   </footer>
