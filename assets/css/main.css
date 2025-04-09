@@ -3766,24 +3766,18 @@ input, select, textarea {
 
 /* Wrapper */
 
+#wrapper {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 4rem 2rem;
+	background-color: rgba(255, 255, 255, 0.75); /* semi-transparent */
+	backdrop-filter: blur(6px); /* optional "glass" effect */
+	box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 480px) {
 	#wrapper {
-		width: 64em;
-		max-width: calc(100% - 4em);
-		margin: 0 auto;
+	  padding: 2rem 1rem;
 	}
-
-		@media screen and (max-width: 480px) {
-
-			#wrapper {
-				max-width: calc(100% - 2em);
-			}
-
-		}
-
-		@media screen and (max-width: 360px) {
-
-			#wrapper {
-				max-width: 100%;
-			}
-
-		}
+  }
