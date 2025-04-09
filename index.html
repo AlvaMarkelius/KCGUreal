@@ -1,67 +1,136 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alva Markelius</title>
+  <title>KCGU – King's College Graduate Union</title>
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background: #f5f5f5;
-      color: #333;
+    :root {
+      --purple: #4b0082;
+      --white: #ffffff;
+      --light-grey: #f5f5f5;
+    }
+
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #333;
+      line-height: 1.6;
+    }
+
     header {
-      background: #0a0a23;
-      color: white;
-      padding: 3rem 1rem;
+      background-color: var(--purple);
+      color: var(--white);
+      padding: 2rem 1rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
-    main {
-      max-width: 700px;
-      margin: 2rem auto;
+
+    header img {
+      max-height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 2px solid var(--purple);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--purple);
+      text-decoration: none;
       padding: 1rem;
-      background: white;
-      border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      font-weight: bold;
+      transition: background 0.3s;
     }
+
+    nav a:hover {
+      background: var(--light-grey);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: var(--purple);
+      margin-bottom: 1rem;
+    }
+
     footer {
+      background-color: var(--purple);
+      color: var(--white);
       text-align: center;
       padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Alva Markelius</h1>
-    <p>AI Ethics Researcher | Cambridge & Gothenburg</p>
+    <!-- Add your logo below if you have one -->
+    <!-- <img src="logo.png" alt="KCGU Logo"> -->
+    <h1>King's College Graduate Union (KCGU)</h1>
+    <p>Representing and supporting King’s postgraduate community</p>
   </header>
 
-  <main>
-    <h2>Welcome!</h2>
-    <p>This is a simple one-page site hosted with GitHub Pages. You can use this space to share your research, link to projects, or anything else you'd like to highlight.</p>
-    <p><strong>Links:</strong></p>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#bar-suite">King’s Grad Bar and Grad Suite</a>
+    <a href="#freshers">Guide for Fresher’s</a>
+    <a href="#committee">Executive Committee Members</a>
+    <a href="#links">Useful Links</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>[Add content about the KCGU mission, history, goals, etc.]</p>
+  </section>
+
+  <section id="bar-suite">
+    <h2>King’s Grad Bar and Grad Suite</h2>
+    <p>[Describe the space, opening times, events, etc.]</p>
+  </section>
+
+  <section id="freshers">
+    <h2>Guide for Fresher’s</h2>
+    <p>[Add a welcoming guide, tips, and FAQs for new grads]</p>
+  </section>
+
+  <section id="committee">
+    <h2>Executive Committee Members</h2>
+    <p>[List of committee members, roles, and contact details]</p>
+  </section>
+
+  <section id="links">
+    <h2>Useful Links</h2>
     <ul>
-      <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
-      <li><a href="https://github.com/AlvaMarkelius" target="_blank">GitHub</a></li>
-      <li><a href="mailto:youremail@example.com">Contact Me</a></li>
+      <li><a href="LINK_TO_DOCUMENT.pdf" target="_blank">Handbook PDF</a></li>
+      <li><a href="LINK_TO_OTHER_RESOURCE.pdf" target="_blank">Other Document</a></li>
     </ul>
-  </main>
+  </section>
 
   <footer>
-    © 2025 Alva Markelius
+    <p>&copy; 2025 King's College Graduate Union (KCGU). All rights reserved.</p>
   </footer>
 
 </body>
