@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "KCGU",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../../Desktop/html5up-stellar/images"
+		},
+		{
+			"name": "assets",
+			"path": "../../Desktop/html5up-stellar/assets"
+		}
+	],
+	"settings": {}
+}
